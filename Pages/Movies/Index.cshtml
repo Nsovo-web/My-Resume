@@ -1,0 +1,67 @@
+﻿@page  
+@model MyResume.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Favourite Movies</h1>
+
+<p>
+    <a asp-page="Create" class="btn btn-outline-secondary">Add New Movie</a>
+</p>
+
+<form>
+
+    <select asp-for="MovieGenre" asp-items="Model.Genres" class="mb-4 border-secondary">
+        <option value="">All Genres</option>
+    </select>
+
+    <p>
+        Title: <input type="text" asp-for="SearchString" class="border-secondary" />
+        <input type="submit" value="Filter" class="btn btn-outline-light" />
+    </p>
+</form>
+
+<table class="table text-light">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Genre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Movie[0].Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Movie) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.ID" class="btn btn-outline-success">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.ID" class="btn btn-outline-info" >Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.ID" class="btn btn-outline-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

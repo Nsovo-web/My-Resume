@@ -1,0 +1,182 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!-- Page Content-->
+<div class="container-fluid p-0 transparent-box">
+    <div class="demo-wrap"></div>
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h2 class="mb-1">Hi , I'm</h2>
+
+            <div class="row">
+                <h1 class="mr-2">Sean</h1>
+                <h1 class="mb-0 slide-in">
+
+                    <span class="">Maserumule</span>
+                </h1>
+            </div>
+
+            <div class="subheading mb-5">
+                                                       Cell · 0715638887 ·
+                <a href="mailto:smaserumule@gmail.com">smaserumule@gmail.com</a>
+            </div>
+            <p class="lead mb-5">I have a good mathematical and computer science background, exposure to frameworks such as Qt and Visual Studio put me in a position to learn more and build more with those frameworks 
+            and i beleive that being a developer is a continuous learning process. "How?" is the question that I seek to answer and is at the heart of my desire to keep learning more.</p>
+            <div class="social-icons">
+                <a class="social-icon" href="https://www.linkedin.com/in/nsovo-maserumule-959980aa"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/Nsovo-web?tab=repositories"><i class="fab fa-github"></i></a>
+                <a class="social-icon" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        
+        <div class="resume-section-content ">
+            <h2 class="mb-5 reveal">Projects</h2>
+
+            <div class="row">
+                <div h class="mb-sm-4 reveal d-flex flex-column flex-md-row justify-content-between mb-6 col-md-5 card bg-transparent border-primary">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">C#.net Winforms Management APP</h3>
+                        <div class="subheading mb-3">Desktop App</div>
+                        <div class="inner mb-3">
+                            <a href="~/myApp.zip" download="">
+                                <img class="card-img m-lg-auto mb-auto" src="~/assets/img/Capture.jpg" />
+
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="mb-sm-4 reveal d-flex flex-column flex-md-row justify-content-between mb-6 ml-auto col-md-5 card bg-transparent border-primary">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">ASP.Net App</h3>
+                        <div class="subheading mb-3">Simple CRUD</div>
+
+                        <div class="inner mb-3">
+                            <a asp-area="" asp-page="Movies/Index">
+                                <img class="card-img m-lg-auto mb-auto" src="~/assets/img/Capture2.jpg" />
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-lg-5">
+                <div class="mb-sm-4 reveal d-flex flex-column flex-md-row justify-content-between mb-6 col-md-5 card bg-transparent border-primary">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">Asp.Net Web API</h3>
+                        <div class="subheading mb-3">To-do List </div>
+                        <div class="inner mb-3">
+                            <a>
+                                <img class="card-img m-lg-auto mb-auto" src="~/assets/img/Website-Design-Background.jpg" />
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class=" mb-sm-4 reveal d-flex flex-column flex-md-row justify-content-between mb-6 ml-auto col-md-5 card bg-transparent border-primary">
+                    <div class="flex-grow-1">
+                        <h3 class="mb-0">ASP.Net Webforms</h3>
+                        <div class="subheading mb-3">One Time Payment With Stripe</div>
+
+                        <div class="inner mb-3">
+                            <img class="card-img m-lg-auto mb-auto" src="~/assets/img/web_developer_wallpaper__code__by_plusjack-d7bmt54.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Education-->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content">
+            <h2 class="mb-5 reveal">Education</h2>
+            <div class="reveal d-flex flex-column flex-md-row justify-content-between mb-5">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">University of South Africa</h3>
+                    <div class="subheading mb-3">Bachelor of Science</div>
+                    <div>Computing - Computer Science</div>
+                    <p></p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">February 2016 - November 2019</span></div>
+            </div>
+            <div class="reveal d-flex flex-column flex-md-row justify-content-between">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">Capricorn High School</h3>
+                    <div class="subheading mb-3">Subjects - (Maths - Engineering Graphics & Design - Physics - Geography)</div>
+                    <p></p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">January 2007 - November 2011</span></div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        <div class="reveal resume-section-content">
+            <h2 class="mb-5">Skills</h2>
+            <div class="subheading mb-3">Programming Languages & Tools</div>
+            <ul class="list-inline dev-icons">
+                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+            </ul>
+            <div class="subheading mb-3">Knowledge Space</div>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Object Oriented Programming (C#,Java,C++)
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    MVC using Qt framework - C++
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    .net Framework (Winforms)
+                </li>
+                <li>
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    SQL MSSQL
+                </li>
+            </ul>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        <div class="reveal resume-section-content">
+            <h2 class="mb-5">Interests</h2>
+            <p>Apart from being a developer, I enjoy most of my time making digital music productions. I am an avid music producer and novice sound engineer. During the summer months, I enjoy fun activities such as hiking,swimming and working out.</p>
+            <p class="mb-0">I follow a number of sci-fi and fantasy genre movies and television shows that engage with my imagination.I also spend some of my free time exploring the latest technology advancements.</p>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Awards-->
+    <section class="resume-section" id="awards">
+        <div class="reveal resume-section-content">
+            <h2 class="mb-5">Awards & Certifications</h2>
+            <ul class="fa-ul mb-0">
+                <li>
+                    <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                    Introduction To Internet And Web Design - UNISA
+                </li>
+            </ul>
+        </div>
+    </section>
+</div>
